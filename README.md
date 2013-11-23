@@ -3,7 +3,8 @@ MailMateEvernote
 
 Evernote Support for MailMate
 
-Mail is sent to Evernote using applescript.
+Mail message is saved as a note on Evernote.
+The message is sent using applescript.
 
 Usage
 -----
