@@ -11,7 +11,7 @@ tmpfile = File.open(tmpfilename_html, "w+")
 
 location = URI::escape(ENV['MM_MESSAGE_ID'])
 
-tmpfile.puts('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/xhtml; charset=utf-8"><link type="text/css" rel="stylesheet" href="file:///Applications/MailMate.app/Contents/Resources/MmMessagesWebView/stylesheet.css"/><link type="text/css" rel="stylesheet" href="file:///Users/shurain/Library/Application Support/MailMate/Resources/MmMessagesWebView/stylesheet.css"/><title>' + ENV['MM_SUBJECT'] + '</title></head><body><pre>')
+tmpfile.puts('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/xhtml; charset=utf-8"><link type="text/css" rel="stylesheet" href="file:///Applications/MailMate.app/Contents/Resources/MmMessagesWebView/stylesheet.css"/><link type="text/css" rel="stylesheet" href="file:///Users/' + ENV['USER'] '/Library/Application Support/MailMate/Resources/MmMessagesWebView/stylesheet.css"/><title>' + ENV['MM_SUBJECT'] + '</title></head><body><pre>')
 tmpfile.puts("Email: message://%3c" + URI::escape(ENV['MM_MESSAGE_ID']) + "%3e")
 
 canonical = $stdin.read
