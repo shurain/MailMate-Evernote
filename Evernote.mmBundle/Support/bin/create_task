@@ -5,7 +5,7 @@ on run argv
 
     tell application "Evernote"
         activate
-        set theNewNote to (create note from file theFilename notebook "Inbox")
+        set theNewNote to (create note from file theFilename)
         set the source URL of theNewNote to "message://%3c" & theMessageURL & "%3e"
     end tell
 end run
