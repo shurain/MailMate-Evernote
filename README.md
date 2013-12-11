@@ -1,6 +1,9 @@
 MailMateEvernote
 ================
 
+**MailMate now (un)officially supports Evernote
+You can use the pre-released version by clicking "Check Now" button on "Software Update" tab on preferences pane while pressing ⌥(alt/option) button.**
+
 Evernote Support for MailMate
 
 Mail message is saved as a note on Evernote.
